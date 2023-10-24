@@ -1,0 +1,38 @@
+{
+    "name": "tshitshitev2-master",
+    "version": "1.0.0",
+    "description": "website",
+    "main": "postcss.config.js",
+    "directories": {
+        "test": "tests"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^4.2.3",
+        "laravel-vite-plugin": "^0.7.8",
+        "vite": "^4.4.7"
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit",
+        "dev": "npm run development",
+        "development": "mix",
+        "build": "vite build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/whosherald/Tshitshitev2-master.git"
+    },
+    "author": "Tendai ICT",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/whosherald/Tshitshitev2-master/issues"
+    },
+    "homepage": "https://github.com/whosherald/Tshitshitev2-master#readme",
+    "dependencies": {
+        "@tailwindcss/forms": "^0.5.4",
+        "alpinejs": "^3.12.3",
+        "autoprefixer": "^10.4.14",
+        "axios": "^1.4.0",
+        "izitoast": "^1.4.0",
+        "tailwindcss": "^3.3.3"
+    }
+}

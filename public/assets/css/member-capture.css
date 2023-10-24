@@ -1,0 +1,283 @@
+*{
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+#regForm {
+    /* background-color: #ffffff; */
+    margin: 100px auto;
+    /* font-family: Raleway; */
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+}
+/* body{
+    background: #e6e4e4;
+} */
+h1 {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+
+  /* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+
+  /* Hide all steps by default: */
+.tab {
+    display: none;
+}
+.tablestriped tr:nth-child(even){background-color: #f2f2f2;}
+
+button {
+    background-color: #010e46;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#prevBtn {
+    background-color: #010e46;
+}
+
+  /* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+  /* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #04AA6D;
+}
+
+.progress{
+    display: flex;
+    flex-direction: column;
+    height: 16em;
+    gap: 0.5em;
+    background: none;
+    /* border:1px solid #003B73; */
+}
+
+.progress-row{
+    display: flex;
+    height: 45%;
+    width: 100%;
+    justify-content: start;
+    gap: 1em;
+    /* border:1px solid #730000; */
+}
+
+.progress-row .process{
+    font-size: 1.7em;
+}
+
+.progress-row .box-top{
+    width:24%;
+}
+.progress-row .box-bottom{
+    width:24%;
+    height: 95%;
+}
+.progress-row .process .box-top-no{
+    width:15%;
+    height:60%;
+}
+.progress-row .process .box-bottom-no{
+    width:15%;
+    height:60%;
+}
+
+#wizard-validation-form {
+    /* border: 3px solid black; */
+    background: white;
+    height: auto;
+    padding: 1em 2em;
+    border-radius: 1em;
+    box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.47);
+    -moz-box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.47);
+    margin-bottom: 2em;
+}
+
+.btn_round {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.btn_round:hover {
+    color: #fff;
+    background: #6b4acc;
+    border: 1px solid #6b4acc;
+}
+
+.btn_content_outer {
+    display: inline-block;
+    width: 85%;
+}
+.close_c_btn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    line-height: 30px;
+    border-radius: 50%;
+    background: #ededed;
+    border: 1px solid #ccc;
+    color: #ff5c5c;
+    text-align: center;
+    cursor: pointer;
+}
+
+.add_icon {
+    padding: 10px;
+    border: 1px dashed #aaa;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.add_group_btn {
+    display: flex;
+}
+.add_group_btn i {
+    font-size: 32px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.add_group_btn span {
+    margin-top: 8px;
+}
+.add_group_btn,
+.clone_sub_task {
+    cursor: pointer;
+}
+
+.sub_task_append_area .custom_square {
+    cursor: move;
+}
+
+.del_btn_d {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    /* color: #f5f5f5ab; */
+}
+
+#datatable td {
+    white-space: nowrap; /* Prevent text wrapping to next line */
+    overflow: hidden; /* Hide the overflowing content */
+    text-overflow: ellipsis; /* Add ellipsis for text overflow */
+}
+
+.hidden-file-input {
+    display: none;
+}
+
+/* Style the custom label as the button */
+.custom-file-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #010e46;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Optional: Add some styles to make the icon align nicely */
+.custom-file-input i {
+    margin-right: 5px;
+}
+
+@media screen and (min-width: 850px) and (max-width: 1200px) {
+    .progress-row .process .box-top-no{
+        width:22%;
+        height:60%;
+    }
+    .progress-row .process .box-bottom-no{
+        width:22%;
+        height:60%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 850px) {
+    .progress-row .process .box-top-no{
+        width:30%;
+        height:60%;
+    }
+    .progress-row .process .box-bottom-no{
+        width:30%;
+        height:60%;
+    }
+}
+
+@media (max-width: 680px) {
+    .progress{
+        height: auto;
+        width: 95%;
+        padding-bottom: 1.5em;
+    }
+    .progress .progress-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em;
+    }
+    .progress-row .box-top{
+        width:90%;
+    }
+    .progress-row .box-bottom{
+        width:90%;
+    }
+    .progress-row .process .box-top-no{
+        width:15%;
+        height:60%;
+    }
+    .progress-row .process .box-bottom-no{
+        width:15%;
+        height:60%;
+    }
+    #wizard-validation-form {
+        width: 100%;
+    }
+}
+
